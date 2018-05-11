@@ -1,3 +1,37 @@
 page-home {
+  background: url(./../assets/imgs/COE_bg.jpg);
+  background-repeat:no-repeat;
+  background-position:center center;
+  background-attachment:fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  color:#ffffff;
 
+  ion-header:after {
+    background-image: none !important;
+  }
+
+  ion-content {
+    background-color: transparent !important;
+
+    ion-grid {
+      height: 80%;
+
+      ion-row {
+        height: 50%;
+
+        a, a:hover, a:active, a:visited {
+          color: white;
+          text-decoration:none;
+        }
+
+        ion-col {
+          height: 80%;
+          text-align: center;
+        }
+      }
+    }
+  }
 }
