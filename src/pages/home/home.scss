@@ -34,4 +34,14 @@ page-home {
       }
     }
   }
+
+  ion-footer:before {
+    background-image: none !important;
+  }
+
+  .toolbar-title{
+    color: white !important;
+    font-size: 12px !important;
+  }
+
 }
