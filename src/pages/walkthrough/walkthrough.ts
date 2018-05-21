@@ -1,13 +1,6 @@
 import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
 
-/**
- * Generated class for the WalkthroughPage page.
- *
- * See https://ionicframework.com/docs/components/#navigation for more info on
- * Ionic pages and navigation.
- */
-
 @Component({
   selector: 'page-walkthrough',
   templateUrl: 'walkthrough.html',
@@ -19,6 +12,11 @@ export class WalkthroughPage {
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad WalkthroughPage');
+  }
+
+  playVideo() {
+    let video: HTMLMediaElement = <HTMLMediaElement>document.getElementById('wolkthroughVideo')
+    video.play();
   }
 
 }

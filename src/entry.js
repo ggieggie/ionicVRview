@@ -1,2 +1,1 @@
-var aframe = require('./lib/aframe')
-var aframe = require('./lib/aframe-cubemap-component')
+var aframe = require('./lib/aframe-master.min')
