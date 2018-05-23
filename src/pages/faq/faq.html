@@ -1,12 +1,37 @@
-<!--<ion-header>-->
-
-  <!--<ion-navbar>-->
-    <!--<ion-title>faq</ion-title>-->
-  <!--</ion-navbar>-->
-
-<!--</ion-header>-->
-
+<ion-header>
+  <ion-navbar>
+    <ion-title>教えて COLabot</ion-title>
+  </ion-navbar>
+</ion-header>
 
 <ion-content padding>
-this is faq page
+  <ion-list no-lines class="chat-list">
+    <ion-item class="chat-item" *ngFor="let message of messages" text-wrap>
+      <div *ngIf="message.sender == 'COLabot'">
+        <ion-avatar class="COLabot-avatar" item-left>
+          <img src ="assets/imgs/faq/point_right.png">
+        </ion-avatar>
+        <p class="bubble COLabot-message">{{ message.text }}</p>
+      </div>
+      <div *ngIf="message.sender == 'user'">
+        <ion-avatar class="user-avatar" item-right>
+          <img src ="assets/imgs/faq/user_icon.png">
+        </ion-avatar>
+        <p class="bubble user-message">{{ message.text }}</p>
+      </div>
+    </ion-item>
+  </ion-list>
 </ion-content>
+
+<ion-footer>
+  <ion-toolbar>
+    <ion-item>
+      <ion-input type="text" placeholder="話しかける..." [(ngModel)]="text">
+      </ion-input>
+
+      <button ion-button icon-only item-right clear (click)="sendText();">
+        <ion-icon name="send"></ion-icon>
+      </button>
+    </ion-item>
+  </ion-toolbar>
+</ion-footer>
