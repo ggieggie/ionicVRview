@@ -9,6 +9,11 @@ page-home {
   background-size: cover;
   color:#ffffff;
 
+  ion-header {
+    padding-top: 25px;
+    padding-left: 10px;
+  }
+
   ion-header:after {
     background-image: none !important;
   }
@@ -33,6 +38,10 @@ page-home {
         }
       }
     }
+  }
+
+  ion-footer {
+    padding-bottom: 20px;
   }
 
   ion-footer:before {

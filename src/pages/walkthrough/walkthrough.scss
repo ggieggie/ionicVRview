@@ -1,3 +1,11 @@
 page-walkthrough {
+  @media only screen and (orientation: landscape) and (max-width: 979px) {
+     ion-header {
+      display: none;
+     }
+  }
 
+  .a-orientation-modal {
+    padding-top: 22px;
+  }
 }
