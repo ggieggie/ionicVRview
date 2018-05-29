@@ -10,7 +10,6 @@ page-home {
   color:#ffffff;
 
   ion-header {
-    padding-top: 25px;
     padding-left: 10px;
   }
 
@@ -21,20 +20,46 @@ page-home {
   ion-content {
     background-color: transparent !important;
 
-    ion-grid {
-      height: 80%;
+    @media only screen and (orientation: portrait) {
+      ion-grid {
+        height: 80%;
 
-      ion-row {
-        height: 50%;
+        ion-row {
+          height: 50%;
 
-        a, a:hover, a:active, a:visited {
-          color: white;
-          text-decoration:none;
+          ion-col {
+            height: 80%;
+            text-align: center;
+
+            a, a:hover, a:active, a:visited {
+              color: white;
+              text-decoration:none;
+            }
+          }
         }
+      }
+    }
 
-        ion-col {
-          height: 80%;
-          text-align: center;
+    @media only screen and (orientation: landscape) {
+      ion-grid {
+        height: 100%;
+
+        ion-row {
+          height: 50%;
+
+          ion-col {
+            height: 80%;
+            text-align: center;
+
+            a, a:hover, a:active, a:visited {
+              color: white;
+              text-decoration:none;
+
+              img {
+                width: 50%;
+              }
+            }
+          }
         }
       }
     }
@@ -53,4 +78,62 @@ page-home {
     font-size: 12px !important;
   }
 
+}
+
+.ios {
+  page-home {
+    ion-header {
+      padding-top: 25px;
+
+      @media only screen and (orientation: portrait) {
+        #logo {
+          width: 80%;
+        }
+      }
+
+      @media only screen and (orientation: landscape) {
+        #logo {
+          width: 20%;
+        }
+      }
+    }
+  }
+}
+
+.md {
+  page-home {
+    ion-header {
+      @media only screen and (orientation: portrait) {
+        #logo {
+          width: 60%;
+        }
+      }
+
+      @media only screen and (orientation: landscape) {
+        #logo {
+          width: 20%;
+        }
+      }
+    }
+
+    ion-content {
+      @media only screen and (orientation: portrait) {
+        .scroll-content {
+          margin-top: 78px !important;
+        }
+      }
+
+      @media only screen and (orientation: landscape) and (max-width: 979px) {
+        .scroll-content {
+          margin-top: 30px !important;
+        }
+      }
+
+      @media only screen and (orientation: landscape) and (min-width: 980px) {
+        .scroll-content {
+          margin-top: 100px !important;
+        }
+      }
+    }
+  }
 }
