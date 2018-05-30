@@ -90,3 +90,21 @@ $colors: (
 .font-size-12px {
   font-size: 12px;
 }
+
+
+// iPhone X
+// --------------------------------------------------
+
+@media only screen
+    and (device-width : 375px)
+    and (device-height : 812px)
+    and (-webkit-device-pixel-ratio : 3)
+    and (orientation: portrait) {
+      ion-navbar {
+         padding-top: calc(44px + 4px) !important;
+       }
+      ion-title {
+        padding-top: calc(44px) !important;
+        min-height: calc(44px + 44px) !important;
+      }
+}
