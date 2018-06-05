@@ -96,6 +96,33 @@ page-home {
           width: 20%;
         }
       }
+
+      // iPhone X
+      @media only screen and (device-width : 375px) and (device-height : 812px)
+        and (-webkit-device-pixel-ratio : 3) and (orientation: landscape) {
+
+        padding-top: 5px !important;
+
+        #logo {
+          margin-left: 20px !important;
+        }
+      }
+    }
+
+    ion-content {
+      // iPhone X
+      @media only screen and (device-width : 375px) and (device-height : 812px)
+          and (-webkit-device-pixel-ratio : 3) and (orientation: landscape) {
+        .scroll-content {
+           margin-top: 45px !important;
+        }
+
+        ion-grid {
+          img {
+            width: 45% !important;
+          }
+        }
+      }
     }
   }
 }
