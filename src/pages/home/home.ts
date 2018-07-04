@@ -5,7 +5,6 @@ import { OverviewPage } from './../overview/overview';
 import { CoworkingPage } from './../coworking/coworking';
 import { ScopingPage } from './../scoping/scoping';
 import { DevelopPage } from './../develop/develop';
-import { WalkthroughPage } from './../walkthrough/walkthrough';
 import { FaqPage } from './../faq/faq';
 
 @Component({
@@ -17,7 +16,6 @@ export class HomePage {
   coworkingPage = CoworkingPage;
   scopingPage = ScopingPage;
   developPage = DevelopPage;
-  walkthroughPage = WalkthroughPage;
   faqPage = FaqPage;
 
   constructor(public navCtrl: NavController) {
@@ -40,10 +38,6 @@ export class HomePage {
 
       case 'develop':
         this.navCtrl.push(this.developPage);
-        break;
-
-      case 'walkthrough':
-        this.navCtrl.push(this.walkthroughPage);
         break;
 
       case 'faq':

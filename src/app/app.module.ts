@@ -12,7 +12,6 @@ import { OverviewPage } from '../pages/overview/overview';
 import { CoworkingPage } from '../pages/coworking/coworking';
 import { ScopingPage } from '../pages/scoping/scoping';
 import { DevelopPage } from '../pages/develop/develop';
-import { WalkthroughPage } from '../pages/walkthrough/walkthrough';
 import { FaqPage } from '../pages/faq/faq';
 
 @NgModule({
@@ -23,7 +22,6 @@ import { FaqPage } from '../pages/faq/faq';
     CoworkingPage,
     ScopingPage,
     DevelopPage,
-    WalkthroughPage,
     FaqPage
   ],
   imports: [
@@ -38,7 +36,6 @@ import { FaqPage } from '../pages/faq/faq';
     CoworkingPage,
     ScopingPage,
     DevelopPage,
-    WalkthroughPage,
     FaqPage
   ],
   providers: [
